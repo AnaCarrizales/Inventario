@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+</head>
+<body>
+    <h1>Inventario Listas Enlazadas Dobles</h1>
+
+    <div class="container">
+        <div id="app">
+            <form>
+                <div>
+                    <label for="txtCode">Id:</label>
+                    <input type="number" name="txtCode" id="txtId">
+                </div>
+                <div>
+                    <label for="txtName">Nombre del Producto:</label>
+                    <input type="text" name="txtName" id="txtNombre">
+                </div>
+                <div>
+                    <label for="txtAmount">Cantidad:</label>
+                    <input type="number" name="txtAmount" id="txtCantidad">
+                </div>
+                <div>
+                    <label for="txtCost">Costo:</label>
+                    <input type="number" name="txtCost" id="txtCosto">
+                </div>
+                <div class="field">
+                    <input class="button" id="btnRegistrar" type="button" value="Registrar" />
+                    <br>
+                    <input class="button" id="btnBuscar" type="button" value="Buscar" />
+                    <input id="insertCodeSearch" type="number" placeholder="Código de producto">
+                    <br>
+                    <input class="button" id="btnBorrar" type="button" value="Borrar" />
+                    <input id="insertCode" type="number" placeholder="Código de producto">
+                    <br>
+                    <input class="button" id="btnListar" type="button" value="Listar" />
+                    <input class="button" id="btnListarInvertido" type="button" value="Listar Inverso" />
+                  </div>
+            </form>
+        </div>
+    </div>
+    <div class="details" id="details">
+        <h1>Acciones</h1>
+        <div id="actions">
+
+        </div>
+    </div>
+    <div>
+        <h1>Tabla de Productos</h1>
+        <table id="table">
+            <tr>
+                <th>Id</th>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Costo</th>
+                <th>Costo Total</th>
+            </tr>
+        </table>
+    </div>
+    <script src="main.js" type="module"></script>
+</body>
+</html>
